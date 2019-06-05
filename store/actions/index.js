@@ -1,0 +1,1 @@
+export { getTemp } from "./getTempA";

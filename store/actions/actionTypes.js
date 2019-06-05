@@ -1,0 +1,4 @@
+export const GET_TEMPERATURE = "GET_TEMPERATURE";
+export const GET_LOADER = "GET_LOADER";
+export const SET_LOADER = "SET_LOADER";
+export const SET_TEMPERATURE = "SET_TEMPERATURE";
