@@ -6,3 +6,4 @@ A simple react native app
 * Redux-Thunk
 * OpenWeatherMap
 * NativeBase
+* Native GPS
