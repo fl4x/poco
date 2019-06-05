@@ -1,4 +1,3 @@
-# poco
 A simple react native app
 ![Android || iOS](https://github.com/fl4x/poco/blob/master/iM.png)
 
