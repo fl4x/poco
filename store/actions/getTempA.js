@@ -29,10 +29,6 @@ export const fetchData = () => {
     try {
       await navigator.geolocation.getCurrentPosition(
         async position => {
-          //console.log("position input---------", position);
-          //console.log("timestamp:------------", position.timestamp);
-          //console.log("Lat------", position.coords.latitude);
-          //console.log("Lng------", position.coords.longitude);
           dispatch(setTemp());
           await axios
             .get(
@@ -46,7 +42,6 @@ export const fetchData = () => {
             )
             .then(res => {
               let dat = new Date();
-              //////////////////////////////////////////////
               console.log("SSSSSSSSSSSSSSSSSSSSSSSSSSs", res.data);
               dispatch(getTemp(res.data.main));
               dispatch(setRemp(dat));
@@ -64,7 +59,6 @@ export const fetchData = () => {
       );
     } catch (error) {
       alert("Weather Obtaining Error - /* _ */: ", error);
-      // dispatch(fetchDataRejected(error));
     }
   };
 };

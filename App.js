@@ -39,7 +39,7 @@ const instructions = Platform.select({
 
 type Props = {};
 
-class App extends PureComponent<Props> {
+class App extends Component<Props> {
   componentWillMount() {
     const config = {
       skipPermissionRequests: false,
@@ -47,7 +47,6 @@ class App extends PureComponent<Props> {
     };
 
     navigator.geolocation.setRNConfiguration(config);
-
     this.props.onGetWeather();
   }
 
@@ -96,10 +95,7 @@ class App extends PureComponent<Props> {
                   ) : (
                     <Spinner color="grey" />
                   )}
-                  <Text style={styles.bt}>
-                    {/* {JSON.stringify(this.props.loading)} Refresh */}
-                    Update
-                  </Text>
+                  <Text style={styles.bt}>Update</Text>
                 </Button>
               </Right>
             </CardItem>

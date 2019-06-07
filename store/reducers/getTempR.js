@@ -24,7 +24,6 @@ const tempReducer = (state = initialState, action) => {
       };
     }
     case SET_TEMPERATURE: {
-      console.log("SETTT_temp-------", action.data);
       AsyncStorage.setItem(
         "lst",
         JSON.stringify({
