@@ -5,5 +5,5 @@ A simple react native app
 * React-Redux
 * Redux-Thunk
 * OpenWeatherMap
-* NativeBase
-* Native GPS
+* NativeBase UI framework
+* Device-Integrated GPS
