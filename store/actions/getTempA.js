@@ -42,7 +42,6 @@ export const fetchData = () => {
             )
             .then(res => {
               let dat = new Date();
-              console.log("SSSSSSSSSSSSSSSSSSSSSSSSSSs", res.data);
               dispatch(getTemp(res.data.main));
               dispatch(setRemp(dat));
             })
