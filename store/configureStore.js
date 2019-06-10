@@ -6,8 +6,6 @@ const rootReducer = combineReducers({
   getTemp: tempReducer
 });
 
-// const rootReducer = tempReducer;
-
 const configureStore = () => {
   return createStore(rootReducer, applyMiddleware(thunk));
 };
